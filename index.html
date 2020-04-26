@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=cyrillic"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Larex</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <a href="#" class="logo">Larex</a>
+            <ul class="menu">
+                <li class="menu-item"><a href="#" class="menu-link">Главная</a></li>
+                <li class="menu-item"><a href="#about" class="menu-link">Обо мне</a></li>
+                <li class="menu-item"><a href="#portfol" class="menu-link">Портфолио</a></li>
+                <li class="menu-item"><a href="#serv" class="menu-link">Услуги</a></li>
+                <li class="menu-item"><a href="#cont" class="menu-link">Контакти</a></li>
+            </ul>
+        </nav>
+        <h1>Создание сайта</h1>
+        <h3>Одностраничный сайт, Сайт визитка</h3>
+        <div class="button-wrapper">
+            <a href="#order" class="header-btn">ЗАКАЗАТЬ</a>
+        </div>
+        <div class="arrow-icon">
+            <img src="img/arrow-down.svg" alt="arrow-down">
+        </div>
+    </div>
+</header>
+<div id="about" class="about-me">
+    <div class="container">
+        <h2>Обо мне</h2>
+        <div class="about-wrapper">
+            <img src="img/img.jpg" alt="Alexey">
+            <span>
+            <p>Здравствуйте!</p>
+            <p>Меня зовут Алексей. Я начинающий WEB-разработчик и занимаюсь созданием сайтов. Если Вы слышали, ставшую
+                уже
+                поговоркой, фразу «Если Вас нет в интернете, значит Вы не существуете» и уже готовы заявить о себе в
+                мировой
+                сети, то я помогу Вам сделать это. Благодаря моим знаниям и умениям Вы в кратчайший срок станете
+                обладателем
+                одностраничного сайта или сайта-визитки, созданного на языке HTML самой последней 5-й версии, с
+                привлекательным
+                внешним видом, полученным благодаря использованию языка CSS3. При необходимости Ваш сайт будет
+                адаптирован для
+                просмотра с мобильных устройств, благодаря применению технологии Flexbox/Grid.
+            </p>
+            </span>
+        </div>
+    </div>
+</div>
+<div id="portfol" class="portfolio">
+    <div class="container">
+        <h2>Портфолио</h2>
+        <div class="portfolio-wrapper">
+            <div class="block block-1">
+                <h4>The Ham Wordpress theme</h4>
+                <a href="https://altosnop.github.io/theham.github.io/" target="_blank"><img src="img/site-photo-1.jpg"
+                                                                                            alt="site-photo-1"></a>
+                <p>Сайт с активными
+                    элементами, каруселью отзывов и фильтром изображений.</p>
+            </div>
+            <div class="block block-2">
+                <h4>Architect</h4>
+                <a href="https://altosnop.github.io/architect.github.io/" target="_blank"><img
+                        src="img/site-photo-2.jpg" alt="site-photo-2"></a>
+                <p>Рабочее меню сайта, кнопка возврата в самый верх. Фоновые картинки зафиксированы на заднем фоне,
+                    получается эфект Paralax.</p>
+            </div>
+            <div class="block">
+                <h4>Batman</h4>
+                <a href="https://altosnop.github.io/batman/" target="_blank"><img src="img/site-photo-3.jpg"
+                                                                                  alt="site-photo-3"></a>
+                <p>Вертска сайта к фильму Бэтмен. С анимацией и активными элементами. Сайт будет отлично выглядеть на
+                    всех
+                    устройствах.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="serv" class="services">
+    <div class="container">
+        <h2>Мои услуги</h2>
+        <div class="wrapper">
+            <div class="service service-1">
+                <h4>Сайт визитка</h4>
+                <img src="img/icon-1.svg" alt="">
+                <p>Cайт с краткой информацией о Вас или Вашей услуге. Сайт, как правило одностраничный.</p>
+                <span>от <span class="colored">800 грн</span></span>
+            </div>
+            <div class="service">
+                <h4>Одностраничный сайт (Landing Page)</h4>
+                <img src="img/icon-2.svg" alt="">
+                <p>Одностраничный, рекламный сайт для продажи товаров и ваших услуг.</p>
+                <span>от <span class="colored">1000 грн</span></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="cont" class="contacts">
+    <div class="container">
+        <h2>Контакты</h2>
+        <p><span class="colored">E-mail:</span> altosnop@gmail.com</p>
+    </div>
+</div>
+<div class="contact-form">
+    <div class="container">
+        <h3 id="order">Форма обратной связи:</h3>
+        <form class="form" action="mail.php" method="post">
+            <input id="name" name="userName" placeholder="Введите ваше имя:" type="text">
+            <input id="phone" name="userPhone" placeholder="Введите ваш телефон:" type="tel">
+            <textarea id="text" name="userText" placeholder="Сообщение:"></textarea>
+            <input id="btn" value="Отправить" type="submit">
+        </form>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="text-wrapper">
+            <span>©Larex. All Rights Reserved</span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
