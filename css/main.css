@@ -1,0 +1,361 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1140px;
+}
+
+.header {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 95px;
+    background-position: top center;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 29px;
+    padding-bottom: 241px;
+    width: 100%;
+}
+
+.nav .logo {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 41px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav .menu {
+    display: flex;
+}
+
+.nav .menu .menu-item {
+    list-style-type: none;
+}
+
+.nav .menu .menu-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 41px;
+    position: relative;
+}
+
+.nav .menu .menu-link::before {
+    content: '';
+    bottom: -2px;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: all 0.2s;
+}
+
+.nav .menu .menu-link:hover::before {
+    width: 100%;
+}
+
+.header h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 0 15px 0;
+}
+
+.header h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 88px;
+}
+
+.header .header-btn {
+    border-radius: 5px;
+    border: 3px solid #FFFFFF;
+    height: 65px;
+    width: 242px;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFFFF;
+    transition: all 0.2s;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header .header-btn:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.button-wrapper {
+    padding-bottom: 209px;
+}
+
+.arrow-icon {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 55px;
+    width: 100%;
+}
+
+.about-me {
+    margin-bottom: 95px;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #8D5A26;
+    margin: 0 0 45px 0;
+    text-align: center;
+}
+
+.about-me p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: justify;
+    color: #000000;
+    margin: 0;
+    width: 488px;
+}
+
+.about-me img {
+    margin-right: 81px;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio {
+    margin-bottom: 95px;
+}
+
+.portfolio .block h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #B6843C;
+    margin: 0 0 11px 0;
+    text-align: center;
+}
+
+.portfolio .block p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 43px 0 0 0;
+    width: 262px;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-wrapper .block-1 {
+    margin-right: 107px;
+}
+
+.portfolio-wrapper .block-2 {
+    margin-right: 107px;
+}
+
+.services {
+    margin-bottom: 95px;
+}
+
+.services .service {
+    border: 4px solid black;
+    border-radius: 5px;
+    height: 373px;
+    width: 263px;
+}
+
+.service-1 {
+    margin-right: 108px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.services h4 {
+    text-align: center;
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.services p {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.services span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.services .colored {
+    color: #B6843C;
+}
+
+.services .service {
+    box-sizing: border-box;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.colored {
+    color: #B6843C;
+}
+
+.contacts p {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+}
+
+.contacts {
+    margin-bottom: 120px;
+}
+
+.contact-form h3 {
+    margin: 0 0 28px 0;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.contact-form .form {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto 95px auto;
+    width: 750px;
+    padding: 52px;
+    border: 4px solid #000000;
+    border-radius: 5px;
+}
+
+.contact-form input, #text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 16px 30px;
+}
+
+#name, #phone, #text {
+    margin-bottom: 38px;
+}
+
+#btn {
+    cursor: pointer;
+    margin: 0 auto;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    height: 53px;
+    width: 225px;
+    padding: 14px 30px;
+    transition: all 0.2s;
+}
+
+#btn:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+input::-webkit-input-placeholder {
+    color: #000000;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #000000;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #664626;
+    height: 110px;
+}
+
+.footer span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.text-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
