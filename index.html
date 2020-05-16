@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=cyrillic"
           rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -13,7 +14,7 @@
     <div class="container">
         <nav class="nav">
             <a href="#" class="logo">Larex</a>
-            <ul class="menu">
+            <ul class="menu" id="menu">
                 <li class="menu-item"><a href="#" class="menu-link">Главная</a></li>
                 <li class="menu-item"><a href="#about" class="menu-link">Обо мне</a></li>
                 <li class="menu-item"><a href="#portfol" class="menu-link">Портфолио</a></li>
@@ -111,7 +112,12 @@
 <div class="contact-form">
     <div class="container">
         <h3 id="order">Форма обратной связи:</h3>
-        <form class="form" action="mail.php" method="post">
+        <form class="form" action="" method="post">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Larex">
+            <input type="hidden" name="admin_email" value="altosnop@gmail.com">
+            <input type="hidden" name="form_subject" value="Заявка с формы.">
+            <!-- END Hidden Required Fields -->
             <input id="name" name="userName" placeholder="Введите ваше имя:" type="text">
             <input id="phone" name="userPhone" placeholder="Введите ваш телефон:" type="tel">
             <textarea id="text" name="userText" placeholder="Сообщение:"></textarea>
@@ -126,5 +132,9 @@
         </div>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+<script src="js/yakor-script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
