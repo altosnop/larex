@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=cyrillic"
           rel="stylesheet">
     <link
@@ -11,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Larex</title>
+    <title>Larex ©</title>
 </head>
 <body>
 <header class="header">
@@ -20,12 +21,19 @@
             <a href="#" class="logo animate__animated animate__backInDown">Larex</a>
             <button class="toggle-menu-btn animate__animated animate__jackInTheBox animate__delay-4s">Menu</button>
             <div class="menu-modal"></div>
-            <ul class="menu animate__animated animate__fadeInDown animate__delay-1s" id="menu">
+            <ul class="menu animate__animated animate__fadeInDown animate__delay-1s">
                 <li class="menu-item"><a class="menu-link home">Главная</a></li>
                 <li class="menu-item"><a class="menu-link about">Обо мне</a></li>
                 <li class="menu-item"><a class="menu-link portfol">Портфолио</a></li>
                 <li class="menu-item"><a class="menu-link service">Услуги</a></li>
-                <li class="menu-item"><a class="menu-link contact">Контакти</a></li>
+                <li class="menu-item"><a class="menu-link contact">Контакты</a></li>
+            </ul>
+            <ul class="menu-mobile">
+                <li class="menu-item"><a class="menu-mobile-link home-mob">Главная</a></li>
+                <li class="menu-item"><a class="menu-mobile-link about-mob">Обо мне</a></li>
+                <li class="menu-item"><a class="menu-mobile-link portfol-mob">Портфолио</a></li>
+                <li class="menu-item"><a class="menu-mobile-link service-mob">Услуги</a></li>
+                <li class="menu-item"><a class="menu-mobile-link contact-mob">Контакты</a></li>
             </ul>
         </nav>
         <h1 class="animate__animated animate__zoomInUp animate__delay-2s">Создание сайта</h1>
@@ -94,13 +102,13 @@
     <div class="container">
         <h2>Мои услуги</h2>
         <div class="wrapper">
-            <div class="service service-1">
+            <div class="service service-1 hvr-grow-shadow">
                 <h4>Сайт визитка</h4>
                 <img src="img/icon-1.svg" alt="">
                 <p>Сайт с краткой информацией о Вас или Вашей услуге. Сайт, как правило одностраничный.</p>
                 <span>от <span class="colored">800 грн</span></span>
             </div>
-            <div class="service">
+            <div class="service hvr-grow-shadow">
                 <h4>Одностраничный сайт (Landing Page)</h4>
                 <img src="img/icon-2.svg" alt="">
                 <p>Одностраничный, рекламный сайт для продажи товаров и ваших услуг.</p>
@@ -123,6 +131,8 @@
                                              required>
             <label for="phone"></label><input id="phone" name="Phone" placeholder="Введите ваш телефон:"
                                               type="number" required>
+            <label for="email"></label><input id="email" name="Email" placeholder="Введите ваш email:"
+                                              type="email" required>
             <label for="text"></label><textarea id="text" name="Message" placeholder="Сообщение:" required></textarea>
             <input id="btn" value="Отправить" type="submit">
         </form>
