@@ -7,15 +7,11 @@ class Modal {
     openModal() {
         const menuButton = document.querySelector('.toggle-menu-btn');
         const modal = document.querySelector('.menu-modal');
-        const menu = document.querySelector('.menu');
-        const link = document.querySelectorAll('.menu-link');
+        const menu = document.querySelector('.menu-mobile');
 
         menuButton.addEventListener('click', () => {
             modal.style.display = 'block';
             menu.style.display = 'flex';
-            menu.classList.add('mobile-menu');
-
-            link.forEach(link => link.classList.add('mobile'));
 
             modal.append(menu);
         })
@@ -36,8 +32,15 @@ class Modal {
 
 class ScrollingTo {
     constructor() {
-        this.buttonsListeners();
+        this.buttonsListenersDesktop();
+        this.buttonListenersMobile();
     }
+
+    header = document.querySelector('.header');
+    about = document.querySelector('#about');
+    portfolio = document.querySelector('#portfolio');
+    services = document.querySelector('#services');
+    contact = document.querySelector('#contact');
 
     scrollTo(element) {
         window.scroll({
@@ -47,37 +50,59 @@ class ScrollingTo {
         })
     }
 
-    buttonsListeners() {
+    buttonsListenersDesktop() {
         const homeBtn = document.querySelector('.home');
         const aboutBtn = document.querySelector('.about');
         const portfolioBtn = document.querySelector('.portfol');
         const serviceBtn = document.querySelector('.service');
         const contactBtn = document.querySelector('.contact');
 
-        const header = document.querySelector('.header');
-        const about = document.querySelector('#about');
-        const portfolio = document.querySelector('#portfolio');
-        const services = document.querySelector('#services');
-        const contact = document.querySelector('#contact');
-
         homeBtn.addEventListener('click', () => {
-            this.scrollTo(header);
+            this.scrollTo(this.header);
         })
 
         aboutBtn.addEventListener('click', () => {
-            this.scrollTo(about);
+            this.scrollTo(this.about);
         })
 
         portfolioBtn.addEventListener('click', () => {
-            this.scrollTo(portfolio);
+            this.scrollTo(this.portfolio);
         })
 
         serviceBtn.addEventListener('click', () => {
-            this.scrollTo(services);
+            this.scrollTo(this.services);
         })
 
         contactBtn.addEventListener('click', () => {
-            this.scrollTo(contact);
+            this.scrollTo(this.contact);
+        })
+    }
+
+    buttonListenersMobile() {
+        const homeBtnMob = document.querySelector('.home-mob');
+        const aboutBtnMob = document.querySelector('.about-mob');
+        const portfolioBtnMob = document.querySelector('.portfol-mob');
+        const serviceBtnMob = document.querySelector('.service-mob');
+        const contactBtnMob = document.querySelector('.contact-mob');
+
+        homeBtnMob.addEventListener('click', () => {
+            this.scrollTo(this.header);
+        })
+
+        aboutBtnMob.addEventListener('click', () => {
+            this.scrollTo(this.about);
+        })
+
+        portfolioBtnMob.addEventListener('click', () => {
+            this.scrollTo(this.portfolio);
+        })
+
+        serviceBtnMob.addEventListener('click', () => {
+            this.scrollTo(this.services);
+        })
+
+        contactBtnMob.addEventListener('click', () => {
+            this.scrollTo(this.contact);
         })
     }
 }
